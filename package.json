@@ -1,0 +1,22 @@
+{
+  "name": "ai-bdd-tester",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx tsx tests/runner.ai.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.17.3",
+    "@modelcontextprotocol/server-filesystem": "^2025.7.29",
+    "@playwright/mcp": "^0.0.33",
+    "@types/node": "^24.3.0",
+    "dotenv": "^17.2.1",
+    "tsx": "^4.20.4"
+  }
+}
