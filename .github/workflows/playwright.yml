@@ -5,7 +5,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: mcr.microsoft.com/playwright:v1.54.0-noble
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -14,5 +14,6 @@ jobs:
     - name: Setup
       run: |
         npm ci
+        npx playwright install --with-deps
     - name: Test
       run: npm run test
