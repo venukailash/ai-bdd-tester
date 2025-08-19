@@ -40,17 +40,8 @@ async function main() {
       if (candidate.content?.parts) {
         for (const part of candidate.content.parts) {
           if (part.text) {
-            console.log(`Text part : ${part.text}`);
+            console.log(`${part.text}`);
             stepResults += part.text;
-          }
-          if (part.thought) console.log(`Thought: ${part.thought}`);
-          if (part.executableCode && part.executableCode.code) {
-            console.log(`Executable Code: ${part.executableCode.code}`);
-          }
-          if (part.codeExecutionResult && part.codeExecutionResult.output) {
-            console.log(
-              `Code Execution Output: ${part.codeExecutionResult.output}`
-            );
           }
         }
       }
